@@ -58,6 +58,6 @@
     - mongodb
   - name: print catalogue_output
     debug: 
-      nsg: "{{ catalogue_output }}"
+      msg: "{{ catalogue_output }}"
     tags:
     - mongodb
