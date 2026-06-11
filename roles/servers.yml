@@ -14,8 +14,7 @@
       image_id: "{{ image_id }}"
       region: us-east-1
       security_groups:
-      - "roboshop-{{ item }}"
-      - roboshop-common
+      - "roboshop-frontend"
     loop: "{{ instances }}"
     register: ec2_output
     when: action == "create"
